@@ -1,0 +1,9 @@
+Para producir en Quarto desde BASH:
+quarto render "file.qmd"
+Para proceso Git:
+qit status
+git add .
+git commit -m "update slides blahb"
+git push
+
+https://rmarkdown.rstudio.com/articles_intro.html

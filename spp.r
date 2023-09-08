@@ -1,7 +1,6 @@
 getwd()
 install.packages('openxlsx')
 install.packages('dplyr')
-install.packages("ggplot")
 
 library(openxlsx)
 library(dplyr)

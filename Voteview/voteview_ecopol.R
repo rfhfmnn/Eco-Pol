@@ -5,6 +5,8 @@ rm(list=ls())
 getwd()
 directorio <- "/Users/stefa/Documents/Code/Eco-Pol/Voteview/"
 setwd(directorio)
+dir.create("Graphs")
+
 
 ##############################################################################################################
 
@@ -12,7 +14,7 @@ setwd(directorio)
 install.packages('wnominate','devtools')
 library(ggplot2)
 library(devtools)
-devtools::install_github("voteview/Rvoteview")
+devtools::install_github("voteview/Rvoteview", force = TRUE)
 library(Rvoteview)
 library(pscl)
 library(wnominate)
@@ -35,31 +37,37 @@ rc_post2GM <- voteview_download(res_post2GM$id)
 rc_dur2GM <- voteview_download(res_dur2GM$id)
 }
 
+names(res_pre2GM)
+names(rc_pre2GM)
+View(res_pre2GM)
+
 # Buscar los "legisladores extremos" para la variable Polaridad #
 {
 cons1_pre2GM <- rc_pre2GM$legis.long.dynamic[which.max(rc_pre2GM$legis.data$dim1), c("name", "icpsr")]
 cons2_pre2GM <- rc_pre2GM$legis.long.dynamic[which.max(rc_pre2GM$legis.data$dim2), c("name", "icpsr")]
 defIdeal_pre2GM <- wnominate(rc_pre2GM,
                       polarity = list("icpsr", c(cons1_pre2GM$icpsr, cons2_pre2GM$icpsr)))
+
 cons1_dur2GM <- rc_dur2GM$legis.long.dynamic[which.max(rc_dur2GM$legis.data$dim1), c("name", "icpsr")]
 cons2_dur2GM <- rc_dur2GM$legis.long.dynamic[which.max(rc_dur2GM$legis.data$dim2), c("name", "icpsr")]
 defIdeal_dur2GM <- wnominate(rc_dur2GM,
                       polarity = list("icpsr", c(cons1_dur2GM$icpsr, cons2_dur2GM$icpsr)))
+
 cons1_post2GM <- rc_post2GM$legis.long.dynamic[which.max(rc_post2GM$legis.data$dim1), c("name", "icpsr")]
 cons2_post2GM <- rc_post2GM$legis.long.dynamic[which.max(rc_post2GM$legis.data$dim2), c("name", "icpsr")]
 defIdeal_post2GM <- wnominate(rc_post2GM,
                       polarity = list("icpsr", c(cons1_post2GM$icpsr, cons2_post2GM$icpsr)))
 
 }
-cons1_pre2GM
-cons2_pre2GM
-cons1_dur2GM
-cons2_dur2GM
-cons1_post2GM
-cons2_post2GM
+
+summary(rc_pre2GM)
+
+cons1_pre2GM; cons2_pre2GM # Extremos pre 2GM
+cons1_dur2GM; cons2_dur2GM # Extremos durante 2GM
+cons1_post2GM; cons2_post2GM # Extremos post 2GM
+
 
 # Crear las etiquetas de nombres de partidos y graficar #
-dir.create("Graphs")
 
 {
 defIdeal_pre2GM$legislators$partyName <- ifelse(defIdeal_pre2GM$legislators$party == 200, "Republican",ifelse(defIdeal_pre2GM$legislators$party == 100, "Democrat", "Independent"))
@@ -75,6 +83,7 @@ graph_post2GM <- ggplot(defIdeal_post2GM$legislators,aes(x=coord1D, y=coord2D, c
 ggsave(filename = "Graphs/post_2GM.jpg", plot = graph_post2GM, width = 6, height = 4)
 }
 
+rm(list=ls())
 
 ## GUERRA DE VIETNAM #######################################################################################
 
@@ -106,15 +115,15 @@ rc_durV <- voteview_download(res_durV$id)
                                 polarity = list("icpsr", c(cons1_postV$icpsr, cons2_postV$icpsr)))
   
 }
-cons1_preV
-cons2_preV
-cons1_durV
-cons2_durV
-cons1_postV
-cons2_postV
+
+summary(rc_preV)
+
+cons1_preV; cons2_preV # Extremos pre Vietnam
+cons1_durV; cons2_durV # Extremos durante Vietnam
+cons1_postV; cons2_postV # Extremos post Vietnam
+
 
 # Crear las etiquetas de nombres de partidos y graficar #
-dir.create("Graphs")
 
 {
   defIdeal_preV$legislators$partyName <- ifelse(defIdeal_preV$legislators$party == 200, "Republican",ifelse(defIdeal_preV$legislators$party == 100, "Democrat", "Independent"))
@@ -130,6 +139,7 @@ dir.create("Graphs")
   ggsave(filename = "Graphs/post_V.jpg", plot = graph_postV, width = 6, height = 4)
 }
 
+rm(list=ls())
 
 ## INVASION DE AFGANISTAN (2001) #############################################################################
 
@@ -154,13 +164,14 @@ dir.create("Graphs")
                                 polarity = list("icpsr", c(cons1_postA$icpsr, cons2_postA$icpsr)))
   
 }
-cons1_preA
-cons2_preA
-cons1_postA
-cons2_postA
+
+summary(rc_preA)
+
+cons1_preA; cons2_preA # Extremos pre Afganistan
+cons1_postA; cons2_postA # Extremos post Afganistan
+
 
 # Crear las etiquetas de nombres de partidos y graficar #
-dir.create("Graphs")
 
 {
   defIdeal_preA$legislators$partyName <- ifelse(defIdeal_preA$legislators$party == 200, "Republican",ifelse(defIdeal_preA$legislators$party == 100, "Democrat", "Independent"))
@@ -172,25 +183,13 @@ dir.create("Graphs")
   ggsave(filename = "Graphs/post_A.jpg", plot = graph_postA, width = 6, height = 4)
 }
 
-
+rm(list=ls())
 
 ##############################################################################################################
 ##############################################################################################################
+##############################################################################################################
 
-##### Estimación de puntos ideales -- APLICACIÓN: Estimar los puntos ideales de todos los legisladores votando en política exterior en los primeros 6 meses de la administración de Obama. Usaremos las llamadas de votos que entran el Categoría Clausen "Foreign and Defense Policy" y que fueran más o menos competitivas --entre 15 y 85 de los votos YES
-#res <- voteview_search("codes.Clausen:Foreign and Defense Policy support:[15 to 85]",startdate = "1975-01-20", enddate = "1979-01-20")
-#rc <- voteview_download(res$id)
 
-##### Buscar los "legisladores extremos" para la variable Polaridad
-#cons1 <- rc$legis.long.dynamic[which.max(rc$legis.data$dim1), c("name", "icpsr")]; cons1
-#cons2 <- rc$legis.long.dynamic[which.max(rcM$legis.data$dim2), c("name", "icpsr")]; cons2
-#defIdeal <- wnominate(rc,
-#                      polarity = list("icpsr", c(cons1$icpsr, cons2$icpsr)))
-
-##### Crear las etiquetas de nombres de partidos y graficar
-#defIdeal$legislators$partyName <- ifelse(defIdeal$legislators$party == 200, "Republican",ifelse(defIdeal$legislators$party == 100, "Democrat", "Independent"))
-#graph <- ggplot(defIdeal$legislators,aes(x=coord1D, y=coord2D, color=partyName, label=state_abbrev)) +  geom_text() + scale_color_manual("Party", values = c("Republican" = "red","Democrat" = "blue","Independent" = "darkgreen")) + theme_bw()
-#ggsave(filename = "Graphs/4ypost_Vietnam.jpg", plot = graph, width = 6, height = 4)
 
 
 

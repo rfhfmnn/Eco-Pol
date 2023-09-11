@@ -1,7 +1,7 @@
 rm(list=ls())
 
 getwd()
-directorio <- "/Users/stefa/Documents/Code/Political_Economy/"
+directorio <- "/Users/stefa/Documents/Code/Eco-Pol/Voteview/"
 setwd(directorio)
 
 ### Instalar y cargar paquetes

@@ -1,0 +1,128 @@
+---
+title: "Economía Política - Clase Práctica"
+author: "Tobias Lucero & Rafael Hofmann"
+format: 
+  beamer:
+    link-external-newwindow: true 
+---
+
+# Práctico primer parcial
+
+*Sistemas de votación*
+
+1)  Suponga que existen 5 grupos de individuos con los siguientes ordenamientos de preferencias sobre 5 alternativas
+
+-   Preferencias
+    -   (21 personas) $C>A>E>B>D$
+    -   (15 personas) $B>D>A>C>E$
+    -   (12 personas) $A>B>E>D>C$
+    -   (8 personas) $D>C>E>A>B$
+    -   (4 personas) $E>A>D>B>C$
+
+# Práctico primer parcial
+
+Responda que alternativa resulta ganadora bajo los siguientes métodos de votación colectiva:
+
+a)  Pluralidad
+b)  Mayoría Absoluta
+c)  Votación de Condorcet
+d)  Método Borda (criterio de n-1)
+
+# Práctico primer parcial
+
+a)  El método de Pluralidad afirma que el ganador sera la alternativa con mayor cantidad de votos, por lo tanto la alternativa ganadora es C con 21 puntos.
+
+b)  El método de mayoría absoluta afirma que el ganador debe obtener la mitad mas uno de los votos para salir ganadora. En este caso el total de los votantes es 60 por lo cual ningún alternativa sale victoriosa bajo esta regla de votación.
+
+# Práctico primer parcial
+
+c)  El método de Condorcet afirma que una alternativa sera la ganadora de Condorcet si vence a todas las demás alternativas en votaciones de a pares. Veamos
+
+-   A vs B -\> 45 vs 15 gana A
+-   A vs C -\> 31 vs 29 gana A
+-   A vs D -\> 37 vs 20 gana A
+-   A vs E -\> 48 vs 12 gana A
+
+Como A vence a todas las demas alternativas en votaciones de a pares, el ganador de Condorcet existe y es la alternativa A.
+
+# Práctico primer parcial
+
+d)  Aplicando el criterio de otorgar "n-1" votos a la primer alternativa escogida por cada individuo, tendremos:
+
+A -\> 63 + 30 + 48 + 8 + 12 = 161
+
+B -\> 21 + 60 + 36 + 0 + 4 = 121
+
+C -\> 84 + 15 + 0 + 24 + 0 = 123
+
+D -\> 0 + 45 + 12 + 32 + 8 = 97
+
+E -\> 42 + 0 + 24 + 16 + 16 = 98
+
+Entonces bajo la elección de este método el ganador es nuevamente A con un total de 161 puntos.
+
+# Práctico primer parcial
+
+2)  Una elección acerca del siguiente ganador del Balón de Oro en octubre del 2023 debe ser decidida a traves del método Borda. A la recta final llegaron 5 candidatos (A, B, C, D y E) y hay 45 votantes entre los cuales se encuentran grandes eminencias del deporte. Si el jugador A obtiene 136 puntos, el jugador B obtiene 129 puntos, el C obtiene 148 y el D obtiene 118.
+
+¿Que candidato sera el ganador del premio? a) Opción A b) Opción B c) Opción C d) Opción D e) Opción E f) Existe un empate entre A y C g) No puede saberse con la información suministrada
+
+# Práctico primer parcial
+
+## Aquí la consigna no plantea nada acerca de cual es el criterio a utilizar dentro del método Borda, sin embargo contabilizando los votos podemos saber cual es la opción a utilizar. Si se contabilizan los votos para las alternativas A a D, nos da un total de 531 votos. Si se utiliza el criterio de "n-1" al ganador, cada individuo otorgaria un total de 10 votos $(4+3+2+1+0)$, por lo que al haber 45 individuos el total de puntos excederia lo máximo que se puede repartir, entonces el criterio a utilizar es el de "n" puntos a la alternativa preferida. De esta forma el ganador sera C con 148 puntos.
+
+# Práctico primer parcial
+## Ejercicio con modelo de Meltzer & Richard
+
+3.  Suponga una sociedad conformada por $n_{p}=530$ individuos pobre y $n_{r}=123$ individuos ricos y que éstos tienen un ingreso de $y_{p}=112$ y de $y_{r}=150$, respectivamente. A partir de aquí suponga un impuesto a las ganancias del $9\%$. Con esta información, responda:
+     i) ¿Cuál es el ingreso directo de los pobres?
+    ii) Si se somete a votación por mayoría absoluta una nueva alícuota del $12\%$ ¿Qué sucedería?
+    iii) ¿Existe desigualdad? ¿Por qué?
+
+# Práctico primer parcial
+**i)**
+
+::: {.callout-tip}
+## Recordar
+$$y^{d}=(1-\tau)y+T$$
+:::
+Conociendo la formula para calcular el ingreso directo de un individuo, el dato que nos falta es el valor de las tranferencias a cada individuo, que, para calcularlo, primero es necesario saber cuanto se recaudaría por cada individuo al aplicarle su respectiva alicuota, por lo que de esta forma $$R=\frac{(y_{p}-y^{n}_{p})n_{p}+(y_{r}-y^{n}_{r})n_{r}}{n}$$ Para encontrar ese valor, calculamos el ingreso neto de impuestos $$y^{n}=(1-\tau)y$$
+
+# Práctico primer parcial
+
+que para el caso de los pobres y de los ricos sería  $$y^{n}_{p}=101,92$$$$y^{n}_{r}=136,5$$ respectivamente. 
+
+De esta forma, la recudación per cápita viene dada por $$R=10,7242$$ y suponiendo que todo lo que se recauda se redistribuye $$R=T$$     
+
+# Práctico primer parcial
+
+Ya con esta información, estamos en condiciones de calcular el ingreso directo de cada individuo pobre, que viene dado por **$$y^{d}_{p}=112,6442$$**
+
+# Práctico primer parcial
+
+**ii)**
+
+En este caso, dado que la implementación de la nueva tasa del $12\%$ esta sometida a una votación por mayoría absoluta, por Teorema del Votante Mediano y como $n_{p}>n_{r}$, los pobres siempre van a preferir una alícuota más alta, por lo que sería aprobada la implementación de la nueva tasa.
+
+# Práctico primer parcial
+
+**iii)**
+
+:::{.callout-note}
+## Nota
+Para comprobar si existe desigualdad en esta economía, primero definimos a $\delta$ como la proporción de individuos ricos y a $(1-\delta)$ como la proporción de individuos pobres. Ahora bien, si queremos parametrizar la desigualdad, definimos a $\theta$, que representaría la proporción del ingreso total en manos de los ricos. 
+:::
+
+# Práctico primer parcial
+
+En este caso, para que exista desigualdad 
+
+$$\theta>\delta$$
+
+$$\theta=\frac{18450}{77810}>\frac{123}{653}=\delta$$ 
+
+por lo que existiría desigualdad.
+
+#
+
+\Huge\centerline{¡Muchas Gracias!}

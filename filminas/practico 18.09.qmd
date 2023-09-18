@@ -80,12 +80,15 @@ Entonces bajo la elección de este método el ganador es nuevamente A con un tot
     iii) ¿Existe desigualdad? ¿Por qué?
 
 # Práctico primer parcial
-**i)**
+**i) ¿Cuál es el ingreso directo de los pobres?**
 
 ::: {.callout-tip}
 ## Recordar
 $$y^{d}=(1-\tau)y+T$$
 :::
+
+# Práctico primer parcial
+
 Conociendo la formula para calcular el ingreso directo de un individuo, el dato que nos falta es el valor de las tranferencias a cada individuo, que, para calcularlo, primero es necesario saber cuanto se recaudaría por cada individuo al aplicarle su respectiva alicuota, por lo que de esta forma $$R=\frac{(y_{p}-y^{n}_{p})n_{p}+(y_{r}-y^{n}_{r})n_{r}}{n}$$ Para encontrar ese valor, calculamos el ingreso neto de impuestos $$y^{n}=(1-\tau)y$$
 
 # Práctico primer parcial
@@ -100,13 +103,15 @@ Ya con esta información, estamos en condiciones de calcular el ingreso directo 
 
 # Práctico primer parcial
 
-**ii)**
+**ii) Si se somete a votación por mayoría absoluta una nueva alícuota del $12\%$ ¿Qué sucedería?**
+
+# Práctico primer parcial
 
 En este caso, dado que la implementación de la nueva tasa del $12\%$ esta sometida a una votación por mayoría absoluta, por Teorema del Votante Mediano y como $n_{p}>n_{r}$, los pobres siempre van a preferir una alícuota más alta, por lo que sería aprobada la implementación de la nueva tasa.
 
 # Práctico primer parcial
 
-**iii)**
+**iii) ¿Existe desigualdad? ¿Por qué?**
 
 :::{.callout-note}
 ## Nota
@@ -119,7 +124,7 @@ En este caso, para que exista desigualdad
 
 $$\theta>\delta$$
 
-$$\theta=\frac{18450}{77810}>\frac{123}{653}=\delta$$ 
+$$\theta=0,237=\frac{18450}{77810}>\frac{123}{653}=0,188=\delta$$ 
 
 por lo que existiría desigualdad.
 

@@ -38,10 +38,10 @@ b)  El método de mayoría absoluta afirma que el ganador debe obtener la mitad 
 
 c)  El método de Condorcet afirma que una alternativa sera la ganadora de Condorcet si vence a todas las demás alternativas en votaciones de a pares. Veamos
 
--   A vs B -\> 45 vs 15 gana A
--   A vs C -\> 31 vs 29 gana A
--   A vs D -\> 37 vs 20 gana A
--   A vs E -\> 48 vs 12 gana A
+-   $A$ vs $B$ $\longrightarrow$ $45$ vs $15$ gana $A$
+-   $A$ vs $C$ $\longrightarrow$ $31$ vs $29$ gana $A$
+-   $A$ vs $D$ $\longrightarrow$ $37$ vs $20$ gana $A$
+-   $A$ vs $E$ $\longrightarrow$ $48$ vs $12$ gana $A$
 
 Como A vence a todas las demas alternativas en votaciones de a pares, el ganador de Condorcet existe y es la alternativa A.
 
@@ -49,15 +49,15 @@ Como A vence a todas las demas alternativas en votaciones de a pares, el ganador
 
 d)  Aplicando el criterio de otorgar "n-1" votos a la primer alternativa escogida por cada individuo, tendremos:
 
-A -\> 63 + 30 + 48 + 8 + 12 = 161
+$A \longrightarrow 63 + 30 + 48 + 8 + 12 = 161$
 
-B -\> 21 + 60 + 36 + 0 + 4 = 121
+$B \longrightarrow 21 + 60 + 36 + 0 + 4 = 121$
 
-C -\> 84 + 15 + 0 + 24 + 0 = 123
+$C \longrightarrow 84 + 15 + 0 + 24 + 0 = 123$
 
-D -\> 0 + 45 + 12 + 32 + 8 = 97
+$D \longrightarrow 0 + 45 + 12 + 32 + 8 = 97$
 
-E -\> 42 + 0 + 24 + 16 + 16 = 98
+$E \longrightarrow 42 + 0 + 24 + 16 + 16 = 98$
 
 Entonces bajo la elección de este método el ganador es nuevamente A con un total de 161 puntos.
 
@@ -93,19 +93,17 @@ Conociendo la formula para calcular el ingreso directo de un individuo, el dato 
 
 # Práctico primer parcial
 
-que para el caso de los pobres y de los ricos sería  $$y^{n}_{p}=101,92$$$$y^{n}_{r}=136,5$$ respectivamente. 
+que para el caso de los pobres y de los ricos sería  $$y^{n}_{p}=(1-0,09).112=101,92$$$$y^{n}_{r}=(1-0,09).150=136,5$$ respectivamente. 
 
-De esta forma, la recudación per cápita viene dada por $$R=10,7242$$ y suponiendo que todo lo que se recauda se redistribuye $$R=T$$     
+De esta forma, la recudación per cápita viene dada por $$R=\frac{(112-101,92).530+(150-136,5).123}{653}=10,7242$$ y suponiendo que todo lo que se recauda se redistribuye $$R=T$$     
 
 # Práctico primer parcial
 
-Ya con esta información, estamos en condiciones de calcular el ingreso directo de cada individuo pobre, que viene dado por **$$y^{d}_{p}=112,6442$$**
+Ya con esta información, estamos en condiciones de calcular el ingreso directo de cada individuo pobre, que viene dado por $$y^{d}_{p}=(1-0,09)112+10,7242=112,6442$$
 
 # Práctico primer parcial
 
 **ii) Si se somete a votación por mayoría absoluta una nueva alícuota del $12\%$ ¿Qué sucedería?**
-
-# Práctico primer parcial
 
 En este caso, dado que la implementación de la nueva tasa del $12\%$ esta sometida a una votación por mayoría absoluta, por Teorema del Votante Mediano y como $n_{p}>n_{r}$, los pobres siempre van a preferir una alícuota más alta, por lo que sería aprobada la implementación de la nueva tasa.
 
@@ -124,7 +122,9 @@ En este caso, para que exista desigualdad
 
 $$\theta>\delta$$
 
-$$\theta=0,237=\frac{18450}{77810}>\frac{123}{653}=0,188=\delta$$ 
+$$\theta=\frac{n_{r}y_{r}}{(n_{r}y_{r})+(n_{p}y_{p})}>\frac{n_{r}}{n_{r}+n_{p}}=\delta$$
+
+$$\theta=\frac{18450}{77810}=0,237>0,188= \frac{123}{653}=\delta$$ 
 
 por lo que existiría desigualdad.
 

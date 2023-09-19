@@ -1,0 +1,129 @@
+---
+title: "Preguntas y actividades para el parcial"
+format: pdf
+editor: visual
+---
+
+## PPU
+
+A partir de una encuesta realizada a estudiantes de Economía de la Universidad Nacional de Córdoba sobre las preferencias por pre-candidatos a presidente, se obtuvieron los siguientes ranking de preferencias:
+
+1.  $PB \sim HRL>JM>SM>JG$
+
+2.  $JM>PB>HRL>JG>SM$
+
+3.  $HRL>JG>SM>JM>PB$
+
+4.  $JM>PB>HRL>SM>JG$
+
+5.  $JM>JG>PB>HRL \sim SM$
+
+6.  $PB>HRL>JM>SM>JG$
+
+7.  $PB>JM>HRL>SM>JG$
+
+8.  $JM>SM>PB>HRL>JG$
+
+a\) En base a esta información, seleccione los ranking de preferencias que presenten *pico único* (para ayudarse puede graficar).
+
+b\) Seleccione únicamente los ranking de preferencias que presenten *pico único* y verifique si cumple con la propiedad de *cruce único.*
+
+**Nota:** en cuanto al ordenamiento de los candidatos, ordenelos de izquieda a derecha de la siguiente manera: JG, SM, HRL, PB y JM.
+
+### Respuesta:
+
+**a) 1, 4, 6 y 7 son de pico único.**
+
+**b) No cumple con la propiedad de *cruce único.***
+
+## Verdadero o falso
+
+1\) Según el modelo de Acemoglu & Robinson, dada la facilidad para gravar el factor Tierra con altos impuestos, una sociedad con una élite terrateniente será más reacia a la hora de utilizar la represión. **F**
+
+2\) Segun el modelo de Acemoglu & Robinson una mayor desigualdad ($\theta$) genera que tanto la democracia como las concesiones sean menos atractivas para los ricos, haciendo más factible que estos elijan reprimira para proteger sus intreses. **V**
+
+3\) Siempre que los ricos prefieran reprimir a hacer concesiones, también van a preferir reprimir a democratizar. **V**
+
+4\) En el modelo simple de demoratización, si $\mu<\mu^{**}$ si bien las promesas de redistribución por parte de los ricos no son suficientes para evitar la revolución, la transición demorática si. **F**
+
+5\) En el modelo simple de democratización, si $\mu^{**}\leq\mu<\mu^{*}$ si bien las promesas de concesión por parte de los ricos son insuficientes, los pobres deciden no iniciar una revolución y los ricos llevan a cabo una transicion hacia la democracia, donde los pobres elegirán la tasa de redistribución. **V**
+
+6\) En el modelo simple de no-democracia, el hecho de que $\theta\leq\mu$ implica que ante una revolución, lo que se le expropia a los ricos para redistribuir es menor al ingreso que se destruye, entonces los pobres eligen no hacer revolución por lo que los ricos tendrán que redistribuir. **F**
+
+7\) Lo que hace más probable la ocurrencia de una revolución y que las promesas de redistribución sean insuficientes, es el aumento de la represión por parte de la élite. **F**
+
+8\) En el modelo de no-democracia los pobres utilizan el poder de facto mediante la amenaza de revolución para así exigir a las élites que les transfieran poder político de jure mediante una democratización. **F**
+
+9\) El poder político de jure es más permanente que el de facto porque el poder de facto suele estar atado a problemas de acción colectiva. **V**
+
+10\) La transición hacia la democracia en Reino unido generó una caída en la desigualdad dado el incremento en la calificación de los trabajadores y un aumento de la redistribución del ingreso mediante la política tributaria. **V**
+
+11\) Las promesas de mayor redistribución por parte de los ricos de la élite son creíbles porque la amenaza de la revolución no es transitoria, por lo que los ricos deberán cumplir con sus promesas de redistribución. **F**
+
+12\) La teoría tradicional de la Ciencia Política argumenta que la educación es un determinante clave de la emergencia y sostenibilidad democrática porque esta promueve y alienta la participación política y desarrolla un sentido colectivo de deber cívico. **V**
+
+12\) En una autocracia cerrada si bien se puede elegir al poder ejecutivo, no se puede elegir al poder legislativo. **F**
+
+13\) El poder, según la definición de política que se suele utilizar en la ciencia política, es la capacidad de una persona o grupo de tomar decisiones por otros. **F**
+
+14\) La autoridad, según la definición de política que se suele utilizar en la ciencia política es la habilidad de un individuo o grupo de lograr que los resultados reflejen sus intereses. **F**
+
+15\) Si no hubiera heterogeneidad de preferencias sobre los resultados no habría necesidad de un mecanismo para agregar preferencias individuales en una elección colectiva. **V**
+
+16\) Si no hubiera confictos de intereses de ningún tipo, la elección política sería la del *social planner* maximizando la utilidad del individuo representativo. **V**
+
+17\) La escuela de la *Public Choice* estudia la elección colectiva bajo diferentes arreglos políticos e institucionales (modelos de votación, teoría axiomática de Arrow, etc). **F**
+
+18\) La escuela de la *Rational Choice* estudia las decisiones de no-mercado, esto es, la aplicación de la economía a la ciencia política (finanzas públicas, problema de agencia entre gobierno y ciudadano, etc). **F**
+
+19\) El método de Borda como alternativa a Condorcet no puede solucionar el problema de los ciclos dada la posible presencia de alternativas irrelevantes. **F**
+
+20\) El equilibrio que existe si ante propuestas políticas, los agentes votan estrategicamente será multiple y dependerá de las creencias que tiene cada elector sobre el comportamiento de sus contrincantes. **V**
+
+21\) La votación sincera es un supuesto racional ante la presencia de manipulación de agenda. **F**
+
+22\) Si existen preferencias de pico único, existe un ganador de Condorcet pero este no necesariamente coincide con el punto ideal del votante mediano. **F**
+
+23\) La paradoja de Condorcet y el Teorema de la Imposibilidad de Arrow destacan la dificultad para llegar a un equilibrio a través de diferentes mecanismos de elección. **V**
+
+24\) La generalización de Kenneth Arrow sobre la toma de decisiones sociales es que ningún mecanismo de votación puede agregar preferencias individuales en unas preferencias socialmente consistentes. **V**
+
+25\) La Independencia de Alternativas Irrelevantes implica que el ordenamiento social de dos alternativas $X$ e $Y$ depende únicamente de como los individuos ordenan estas dos alternativas y no como ordenan otras. **V**
+
+26\) La unanimidad implica que si el ganador de una elección es $X$ (por sobre $Y$), si se dan vuelta los ordenes de preferencia, el ganador pasa a ser $Y$. **F**
+
+27\) El voto sincero puede no ser muy plausible a veces porque en muchas ocasiones los electores votan por una opción que no es su preferida para evitar que una alternativa que prefieren aun menos sea elegida. **V**
+
+28\) El Teorema de May dice que el único método que satisface las condiciones de anonimidad, neutralidad y monotonicidad para determinar un ganador de una elecicón entre dos alternativas es la regla de la mayoría simple. **F**
+
+29\) Existe monotonicidad cuando si cada votante revierte su orden de preferencia, el resultado de la elección se revierte. **F**
+
+30\) Las condiciones deseadas de un sistema de reglas de votación entre dos alternativas son: anonimidad, neutralidad y unicidad. **F**
+
+31\) En el modelo simple de democratización o represión, si $\mu^{**}\leq\mu<\mu^{*}$ y $\kappa<\tilde{\kappa}$, o si $\mu<\mu^{**}$, si bien sería factible reprimir, el costo de la democratización es mucho más bajo, por lo que se preferirá demoratizar. **F**
+
+32\) Según el modelo de democratización o represión mayor desigualdad genera que tanto la democracia como las concesiones sean menos atractivas para los ricos (dado que se ven obligados a redistribuir a una maor tasa para evitar la revolución), haciendo más factible que estos elijan reprimir para proteger sus intereses. **V**
+
+33\) Siempre que los ricos prefieran reprimir a hacer conseciones, también van a preferir reprimir a democratizar dado que las concesiones se hacen a una tasa débilmente menor a la que se redistribuye en democracia y aparte las promesas de redistribución son más faciles de no cumplir. **V**
+
+34\) En el modelo simple de democratización, si $\mu\ge\mu^{*}$ los pobres deciden no iniciar una revolución por lo que los ricos no necesariamente deberán prometer una tasa mínima de redistribución para evitar la misma. **F**
+
+35\) Los *swing voters* reciben más peso por parte de los candidatos porque son los que más responden a los cambios en las plataformas de política de los candidatos, por lo que son más proclives a cambiar de decisión del voto ante cualquier cambio. **V**
+
+36\) La "suavización" que del comportamiento electoral que plantea el Modelo de Votación Probabilistica introduce un elemento de incertidumbre en los candidatos con respecto a las preferencias de lo votantes, mostrando así que un cambio marginal en la política no necesariamente genera un cambio marginal en la probabilidad de elección. **F**
+
+37\) En el Modelo de Votación Probabilistica, para motivar la "suavización" del comportamiento electoral se supone que los votantes están motivados por una consideración adicional a la plataforma de la política propuesta por cada candidato. **V**
+
+38\) En el modelo de competencia Downsiana cuando hay desigualdad, la democracia conlleva a una sub provisión del bien público. **F**
+
+39\) El modelo de competencia Downsiana esta basado en un sistema multi-partido para evitar de esta forma los problemas adicionales que surgen a la hora de analizar la política de equilibrio. **F**
+
+40\) Con preferencias unimodales, la única consideración que tienen en cuenta los electores para votar uno u otro candidato, es la distancia entre la política anunciada con respecto a su política preferida. **V**
+
+41\) En el Modelo de Votación Probabilistica, cuando un candidato gana las elecciones, se le otorgan unas rentas exógenas "$R$" que están asociadas al beneficio de tener poder per se, siendo estas independientes de las política que adopte el candidato una vez elegido. **F**
+
+42\) Cuando se incorporan las preferencias o afinidados de los votantes por un determinado candidato en el Modelo de Votación Probabilistica, desaparece la convergencia hacia la política preferida por el Votante Mediano y surgen elementos adicionales que determinan la política económica de equilibrio. **V**
+
+## 
+
+# 

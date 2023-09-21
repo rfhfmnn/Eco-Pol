@@ -36,6 +36,31 @@ b\) Seleccione únicamente los ranking de preferencias que presenten *pico únic
 
 **b) No cumple con la propiedad de *cruce único.***
 
+## Ejercicio de Meltzer y Richard
+
+Sea una sociedad conformada por dos clases sociales, ricos y pobres, donde los primeros representan el $52\%$ de la población total. De esta forma, suponga que la población está normalizada a 1 y suponga también que el ingreso total de los ricos es de $y_{r}=78$ y el de los pobres $y_{p}=56$. Por otro lado, suponiendo que esta sociedad funciona a partir de una democracia directa, la misma se puso de acuerdo en la implementación de un impuesto a las ganancias, quedando pendiente la discusión de si su alícuota debe ser de $\%3$ o de $\%5$.
+
+Con esta información, y utilizando el modelo de Meltzer y Richard donde cuando sea necesario, resuelva los siguientes incisos:
+
+1.  ¿Cuál es el ingreso promedio en esta economía? ¿Y el ingreso total?
+
+2.  ¿Existe desigualdad en esta economía?
+
+3.  De existir desigualdad (o no), calcule cuanto deben cobrar los ricos para que exista una distribución perfectamente equitativa del ingreso. Deje expresados sus calculos de ser necesario.
+
+4.  Calcule el ingreso directo de los pobres (considerando que ya se discutió el monto del *flat tax*).
+
+### Respuestas
+
+1.  **Dado que en esta economía la población esta normalizada a 1,** **el ingreso promedio es equivalente al ingreso total (**$\bar{y}=y$)**, por ende** $$\bar{y}=y=\delta y_{r}+(1-\delta) y_{p}$$$$\bar{y}=y=0,52.78+0,48.56$$$$\bar{y}=y=67,44$$ **El ingreso total es igual al ingreso promedio.**
+
+2.  **Dado que** $$y_{r}=\frac{\theta y}{\delta}$$ **y** $$y_{p}=\frac{(1-\theta)y}{(1-\delta)}$$ **entonces, utilizando** $y{r}$ **para despejar** $\theta$, $$\theta=\frac{y_r \delta}{y}$$ **entonces** $$\theta=\frac{78.0,52}{67,44}=0,6014$$ **dado que** $\theta>\delta$**, existe desigualdad.**
+
+3.  **La idea es que no realicen ningun calculo y que concluyan que para que exista equidad el ingreso de los ricos debe ser igual al de los pobres.**
+
+4.  **Sabiendo que el ingreso directo viene dado por**\
+    $$y^{d}_{p}=(1-\tau)y_{p}+T$$ **y sabiendo que la tasa impositiva tanto como la transferencia es igual para todos los individuos** $$T=\tau(\delta y_{r}+(1-\delta)y^{p})=\tau y$$ $$T=0,03.67,44$$ $$T=2,0232$$ **entonces el ingreso directo de los pobres vendrá dado por** $$y^{d}_{p}=(1-0,03).56+2,0232$$ $$y^{d}_{p}=56,3432$$
+
 ## Verdadero o falso
 
 1\) Según el modelo de Acemoglu & Robinson, dada la facilidad para gravar el factor Tierra con altos impuestos, una sociedad con una élite terrateniente será más reacia a la hora de utilizar la represión. **F**

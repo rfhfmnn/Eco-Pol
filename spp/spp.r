@@ -44,3 +44,27 @@ for(mi_lista in listas){
   axis(1, labels = as.character(datos$candidatos),
        at = as.numeric(datos$candidatos))
 }
+
+##SANKEY PLOT
+library(networkD3)
+library(htmlwidgets)
+library(ggalluvial)
+
+df<-read.xlsx('preferencias_g.xlsx')
+df<-df %>% rename("generales"="¿Cuál.sería.su.intención.de.voto.en.las.elecciones.generales?",
+                  "paso"="¿A.quién.votaste.en.las.PASO?")
+df_red<-df[,c(7,11)]
+
+
+ggplot(data = df_red,
+       aes(axis1 = paso, axis2 = generales)) +
+  geom_alluvium(aes(fill = paso),
+                curve_type = "arctangent") +
+  geom_stratum() +
+  geom_text(stat = "stratum",
+            aes(label = after_stat(stratum))) +
+  scale_x_discrete(limits = c("Encuesta", "Respuesta"),
+                   expand = c(0.15, 0.05)) +
+  scale_fill_viridis_d() +
+  theme_void() + 
+  theme(legend.position = "none")

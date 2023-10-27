@@ -1,11 +1,7 @@
-getwd()
-install.packages('openxlsx')
-install.packages('dplyr')
-
 library(openxlsx)
 library(dplyr)
 
-df<-read.xlsx('preferencias_candidatos.xlsx')
+df<-read.xlsx('preferencias_p.xlsx')
 
 # ------ selección y ordenamiento de columnas ------
 
@@ -45,7 +41,8 @@ for(mi_lista in listas){
        at = as.numeric(datos$candidatos))
 }
 
-##SANKEY PLOT
+## ------ SANKEY PLOT (YA CON DATOS DE GENERALES) ------
+
 library(networkD3)
 library(htmlwidgets)
 library(ggalluvial)

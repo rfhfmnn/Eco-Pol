@@ -1,0 +1,171 @@
+---
+title: "Clase de repaso previa al segundo parcial"
+subtitle: "Estadística I - División Moneta Pizarro"
+institute: Facultad de Ciencias Económicas (UNC)
+author:
+  - name: Jonás Alvarado
+  - name: Diana Choulet
+  - name: Rafael Hofmann
+  - name: Rosario Martos Vocos
+  - name: Nicolas Laffite 
+  - name: Lara Schellhorn
+format: 
+  beamer:
+    navigation: horizontal
+    header-includes: |
+      \titlegraphic{\includegraphics[width=0.25\paperwidth]{fce.png}}
+editor: visual
+---
+
+## Datos de utilidad
+
+::: {layout-ncol="1"}
+![](ayuda.png){width="350"}
+:::
+
+## Enunciado
+
+*Un estudio realizado en los bancos de la ciudad de Córdoba sobre el atraso en el pago de cuotas de créditos personales, sugiere que las demoras en ingresar la cuota por los deudores siguen una distribución normal con media de 45 días y desviación estándar de 16 días. Dicha demora se mide en cantidad de días transcurridos desde el vencimiento de la cuota hasta la fecha de pago de la misma. Sobre la base de esta información:*
+
+## Enunciado
+
+1.  *Calcular la probabilidad que un crédito al azar tenga una demora superior a* $57$ *días.*
+2.  *Calcular la probabilidad que un crédito al azar tenga una demora inferior a* $30$ *días.*
+3.  *Calcular entre qué cantidad de días de demora se encuentra el* $90%$ *de los deudores, considerando que estos valores sean equidistantes respecto de la media. Ayuda extra:* $F(1,282) = 0,90$, $F(1,645) = 0,95$ y $F(1,96) = 0,975$.
+4.  Suponer ahora que se desconoce la distribución de probabilidad de esta variable y encontrar la cota de probabilidad para que la demora de un crédito difiera de la media en más de 20 días.
+
+## Inciso 1
+
+1.  **Calcular la probabilidad que un crédito al azar tenga una demora superior a** $57$ **días.**
+
+Se busca:
+
+$$
+P(X>57)=1-P(X\leq57)
+$$
+
+## Inciso 1
+
+Estandarizando:
+
+$$
+Z=\frac{X-\mu}{\sigma}
+$$
+
+$$
+Z=\frac{57-45}{16}=0,75
+$$
+
+$$
+P(X>57)=1-P(X\leq57)=1-P(Z\leq0,75)=1-0,77337
+$$
+
+$$
+P(X>57)=\boxed{0,22663}
+$$
+
+La probabilidad de que un crédito al azar tenga una demora superior a $57$ días es del $22,66\%$.
+
+## Inciso 1
+
+::: {layout-ncol="1"}
+![](1a.png){width="400"}
+:::
+
+## Inciso 2
+
+2.  **Calcular la probabilidad que un crédito al azar tenga una demora inferior a** $30$ **días.**
+
+Se busca:
+
+$$
+P(X<30)=P(X\leq30)
+$$
+
+## Inciso 2
+
+Estandarizando:
+
+$$ 
+Z=\frac{30-45}{16}=-0,9375\approx -0,94
+$$
+
+$$
+P(X\leq30)=P(Z\leq-0,94)=1-P(Z>-0,94)
+$$
+
+$$
+P(X\leq30)=1-0,82639=\boxed{0,17361}
+$$
+
+La probabilidad de que un crédito al azar tenga una demora inferior a $30$ días es del $17,36\%$
+
+## Inciso 2
+
+::: {layout-ncol="1"}
+![](1b.png){width="350"}
+:::
+
+## Inciso 3
+
+3.  **Calcular entre qué cantidad de días de demora se encuentra el** $90%$ **de los deudores, considerando que estos valores sean equidistantes respecto de la media. Ayuda extra:** $F(1,282) = 0,90$**,** $F(1,645) = 0,95$ **y** $F(1,96) = 0,975$**.**
+
+Lo que se busca es:
+
+$$
+P(|X|\leq x)=P(-x<X<x)=0,9
+$$
+
+## Inciso 3
+
+En este caso, al querer buscar la cantidad de días de demora donde se encuentra el 90% de los deudores **al rededor de la media**, tendremos un $10\%$ de deudores restantes que estarán en ambos extremos de la distribución, repartidos de igual forma, o sea, $5\%$ del lado izquierdo de la cola y $5\%$ del lado derecho. De esta forma, lo conveniente es es calcular la densidad acumulada hasta el $95\%$ de la distribución **menos** la densidad acumulada hasta el $5\%$ de la distribución, por lo que la ayuda brindada por el ejercicio que nos será de utilidad es $F(1,645)=0,95$
+
+## Inciso 3
+
+Trabajando con una distribución normal estándar:
+
+$$
+P(-1,645<Z<1,645)=P(Z<1,645)-P(Z<-1,645)=0,9
+$$
+
+Al tener los valores de Z, utilizando la formula para estandarizar:
+
+$$
+-1,645=\frac{X-45}{16}\implies X=\boxed{18,68}
+$$
+
+$$
+1,645=\frac{X-45}{16}\implies X=\boxed{71,32}
+$$
+
+## Inciso 3
+
+Por lo que el $90\%$ de los deudores se encuentra demorado entre $19$ y $71$ días.
+
+::: {layout-ncol="1"}
+![](1c.png){width="350"}
+:::
+
+## Inciso 4
+
+4.  **Suponer ahora que se desconoce la distribución de probabilidad de esta variable y encontrar la cota de probabilidad para que la demora de un crédito difiera de la media en más de 20 días.**
+
+¿Qué podemos hacer si no conocemos la distribución de probabilidad de la variable aleatoria?
+
+## Inciso 4
+
+Cuando se desconoce la distribución de probabilidad de una variable, se puede utilizar la Desigualdad de Tchebycheff. En nuestro caso, que se pide la probabilidad para que la demora de un crédito difiera de la media en **mas** de $20$ días, se debe utilizar:
+
+$$
+P\lbrace|X-\mu|>d\rbrace<\frac{V(x)}{d^2}
+$$
+
+Para nuestro caso:
+
+$$
+P\lbrace|X-45|>20\rbrace<\frac{16^2}{20^2}=\boxed{0,64}
+$$
+
+## 
+
+\Huge\centerline{¡Muchas Gracias!}

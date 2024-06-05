@@ -7,7 +7,7 @@ author:
   - name: Diana Choulet
   - name: Rafael Hofmann
   - name: Rosario Martos Vocos
-  - name: Nicolas Laffite 
+  - name: Nicolas Laffitte 
   - name: Lara Schellhorn
 format: 
   beamer:
